@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentMate.com - The Agent Who Animates Your Ideas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="lib/anime.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <svg id="logo-svg" width="40" height="40" viewBox="0 0 40 40">
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FF6CAB" />
+              <stop offset="100%" stop-color="#7366FF" />
+            </linearGradient>
+          </defs>
+          <path class="logo-path" fill="none" stroke="url(#logoGradient)" stroke-width="2" d="M20 5C12.268 5 6 11.268 6 19c0 7.732 6.268 14 14 14s14-6.268 14-14c0-7.732-6.268-14-14-14z"/>
+          <path class="logo-path" fill="none" stroke="url(#logoGradient)" stroke-width="2" d="M15 15l10 10M15 25l10-10"/>
+        </svg>
+        <span class="logo-text">agentmate</span>
+      </div>
+      <nav class="menu">
+        <a href="#">Support</a>
+        <a href="#">Launched</a>
+        <a href="#">Learn</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="#" class="btn btn-text">Sign in</a>
+        <a href="#" class="btn btn-primary">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="heart-animation">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF6CAB" />
+                <stop offset="100%" stop-color="#7366FF" />
+              </linearGradient>
+            </defs>
+            <path class="heart-path" d="M60,20 C50,10 30,10 20,20 C10,30 10,50 20,60 L60,100 L100,60 C110,50 110,30 100,20 C90,10 70,10 60,20 Z" fill="none" stroke="url(#heartGradient)" stroke-width="2"/>
+          </svg>
+        </div>
+        <h1 class="hero-title">Idea to design in seconds.</h1>
+        <p class="hero-subtitle">AgentMate is your superhuman design agent.</p>
+        
+        <div class="input-container">
+          <input type="text" class="command-input" placeholder="Ask AgentMate to create a design for you...">
+          <div class="input-buttons">
+            <button class="btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#FF6CAB" />
+                    <stop offset="100%" stop-color="#7366FF" />
+                  </linearGradient>
+                </defs>
+                <path d="M12 5V19M5 12H19" stroke="url(#iconGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="btn btn-primary">Create</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-showcase">
+      <div class="container">
+        <div class="demo-box">
+          <div class="demo-input">
+            <div class="typing-indicator">
+              <span class="user-prompt">Create a bouncing logo animation</span>
+            </div>
+          </div>
+          <div class="demo-result">
+            <div class="animation-example" id="example-1">
+              <div class="demo-logo">AgentMate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> 
