@@ -1,0 +1,8 @@
+{
+  "name": "agentmate-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for AgentMate",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  }
+} 
